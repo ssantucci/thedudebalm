@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="DudeBalm">
 
 <head>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-86167538-2', 'auto');
-    ga('send', 'pageview');
-  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>John Popenuck</title>
-  <link rel="icon" href="http://publicdomainvectors.org/photos/Anonymous-large-braces.png">
+  <title>The Dude's Balm</title>
+  <link rel="icon" href="/img/icon.jpg">
+
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,6 +25,9 @@
 
   <!-- Theme CSS -->
   <link href="css/creative.css" rel="stylesheet">
+
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,7 +47,7 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span> <span class="menu-text">Menu</span> <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">John Popenuck</a>
+        <a class="navbar-brand page-scroll" href="#page-top">Grateful Dude's Balm</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,10 +57,16 @@
             <a class="page-scroll" href="#about">About</a>
           </li>
           <li>
-            <a class="page-scroll" href="#technologies">Technologies</a>
+            <a class="page-scroll" href="#reviews">Reviews</a>
           </li>
           <li>
-            <a class="page-scroll" href="#portfolio">Portfolio</a>
+            <a class="page-scroll" href="#purchase">Purchase</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#locations">Locations</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#donate">Donate</a>
           </li>
           <li>
             <a class="page-scroll" href="#contact">Contact</a>
@@ -79,10 +81,8 @@
   <header>
     <div class="header-content">
       <div class="header-content-inner">
-        <h1 id="homeHeading">Jonathan Popenuck</h1>
-        <h2>Full Stack Web Developer</h2>
-        <hr>
-        <p class="blurb">I love to solve problems eloquently, dive into code, and create something out of nothing.</p>
+        <h1 id="homeHeading">Grateful Dude's Healing Balm</h1>
+        <h2>CBD/THC Salve</h2>
         <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
       </div>
     </div>
@@ -92,149 +92,136 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h2 class="section-heading">About Me</h2>
+          <h2 class="section-heading">About Us</h2>
           <hr class="light">
-          <p class="text-left">My name is John and I am a full stack web developer. I have taken a slightly winding path to get to this point, and while I am obviously no expert, it seems that a winding path is the best way to arrive at web development. A winding path has allowed me to have varied interests, jobs, and fields of study. A broad base of experiences has allowed me to view the world in various ways, requiring me to adopt different approaches to solving problems.</p>
-          <p class="text-left">The one experience that really pushed me to think about programming as an area of interest, if not a career path, was while working as the head chef at a San Francisco Bay Area restaurant. While I started working in restaurants because I loved food, I soon found my greatest joy was in the analyzing, improving, and refining of almost every system involved in the cooking process.</p>
-          <p class="text-left">From detailed cost analysis of ingredients, replete with popularity and cost of prep per unit, to menu creation and layout to maximize profits, I couldn’t get enough. My main mentor was Google and I spent many nights researching anything from work flow processes to kitchen knives, all in an effort to maximize efficiency. I soon realized all this data tracking and crunching could be easily tracked by a computer and set about to optimize everything in Excel. While I had a lot of success, I did run into a few barriers and wished I knew enough programming to be able to write a program of my own incorporating all of the systems I had devised.</p>
-          <p class="text-left">I have since left the restaurant industry to pursue something more in line with the joy I found in the creation and implementation of systems, which led me to coding. I hopped from coding site to coding site, picking up bits and pieces here and there but realized I wanted something more comprehensive. Then I discovered the Viking Code School. I am now halfway through my full stack web development education and looking forward to starting a new, fulfilling career.</p>
-          <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button" id="contact-btn">Contact Me!</a>
+          <p class="text-left">Some basics, some of the essential oils and uses.</p>
+          <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button" id="contact-btn">Contact Us!</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="technologies">
+  <section id="reviews">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
-          <h2 class="section-heading">Proficient In:</h2>
+          <h2 class="section-heading">Reviews:</h2>
           <hr class="primary">
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-xs-4 text-center icss">
-          <div class="technology-box">
-            <i class="prof icon-css"></i>
-            <h3>CSS</h3>
+        <div class="col-xs-12 text-center">
+          <h4>We have 37 reviews on Facebook and a 5/5 rating!</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="technology-box review1">
+            <blockquote>
+              <p>Definitely a solid product. I've bee using it daily since I discovered it about 6 months or so now and my skin is loving it. I use it after surfing shorebreak getting scraped up and kind of sunburnt and it instantly takes effect relieving the dry burnt feeling. I also use it to massage into sore muscles and bruises and it often times makes me forget they we're even hurting after a few minutes. I even got my mom hooked on it because it's the only thing that has worked for her arthritis. Couldn't recommend this stuff more!</p>
+              <footer>Adam S. <cite title="Source Title">via Facebook</cite></footer>
+            </blockquote>
+          </div>
+          <div class="technology-box review3">
+            <blockquote>
+              <p>My boyfriend and I are obsessed with this balm! It helps his headaches and he claims he sleeps better when be applies it before bed. For me, it helps my breath because I have horrible allergies and it also relieves pain from my lower back and abdomen area when I'm on my moon. Life would would be tough without it for sure! I swear it has magical healing powers. There is certainly a lot of love and intention put into this product.</p>
+              <footer>Diana A. <cite title="Source Title">via Facebook</cite></footer>
+            </blockquote>
+          </div>
+          <div class="technology-box review5">
+            <blockquote>
+              <p>Love this stuff so much! One of my favorite salves I have found this far. Great for muscle pain, but super versatile in how I can apply anywhere - lips, face and skin generally. Love me some multi purpose heady healthy skin care!</p>
+              <footer>Gabrielle R. <cite title="Source Title">via Facebook</cite></footer>
+            </blockquote>
           </div>
         </div>
-        <div class="col-xs-4 text-center iheroku">
-          <div class="technology-box">
-            <i class="prof icon-heroku"></i>
-            <h3>Heroku</h3>
+        <div class="col-xs-12 col-md-6">
+          <div class="technology-box review2">
+            <blockquote>
+              <p>I suffer from nerve damage from a stabbing as well as a bum knee with no miniscus. When a spasm starts, when my knees buckling on me, or when my flat feet are throbbing outta my shoes...I slap some of this on and the pain just disappears. Also does wonders for my headaches after a late night of raging! Ive tried many of products and this is truly the only thing that's helped this well, that fast! </p>
+              <p>I recommend everyone has some!!</p>
+              <footer>Andrew M. <cite title="Source Title">via Facebook</cite></footer>
+            </blockquote>
+          </div>
+          <div class="technology-box review4">
+            <blockquote>
+              <p>The Grateful Dudes Healing Balm is amazing, I go through one about every 1-2 months and it does wonders for healing wounds, healing scars, helping speed the process of poison oak, arthritis, bruising, the list goes on. I've never had something work like this does, highly recommended!!!</p>
+              <footer>Brandon L. <cite title="Source Title">via Facebook</cite></footer>
+            </blockquote>
+          </div>
+          <div class="technology-box review6">
+            <blockquote>
+              <p>I love this balm I live with chronic pain every day due to fibromyalgia, Sjögren's syndrome and degenerate disc disease, I try not to take medication and try to get pain relief the natural way and this balm helps me get through the day.So thank you for making this balm</p>
+              <footer>Ruthie S. <cite title="Source Title">via Facebook</cite></footer>
+            </blockquote>
           </div>
         </div>
-        <div class="col-xs-4 text-center ihtml">
-          <div class="technology-box">
-            <i class="prof icon-html"></i>
-            <h3>HTML</h3>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center ijavascript">
-          <div class="technology-box">
-            <i class="prof icon-javascript-alt"></i>
-            <h3>Javascript</h3>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center imysql">
-          <div class="technology-box">
-            <i class="prof icon-mysql"></i>
-            <h3>MySQL</h3>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center ipostgres">
-          <div class="technology-box">
-            <i class="prof icon-postgres"></i>
-            <h3>Postgres</h3>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center iruby">
-          <div class="technology-box">
-            <i class="prof icon-ruby"></i>
-            <h3>Ruby</h3>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center iror">
-          <div class="technology-box">
-            <i class="prof icon-ruby-on-rails"></i>
-            <h3>Ruby on Rails</h3>
-          </div>
-        </div>
-        <div class="col-xs-4 text-center isass">
-          <div class="technology-box">
-            <img src="img/sass.svg" class="sass">
-            <h3>Sass</h3>
-          </div>
-        </div>
+      </div>
+      <div class="row text-center">
+        <a href="reviews.html" class="btn btn-primary btn-xl page-scroll">See More Reviews</a>
       </div>
     </div>
   </section>
 
-  <section class="no-padding" id="portfolio">
+  <section id="purchase">
+
+  </section>
+
+  <section id="donate">
+
+  </section>
+
+  <section class="no-padding" id="locations">
     <div class="container-fluid">
-      <div class="row no-gutter">
-        <div class="col-lg-6 col-sm-6 promo">
-          <a href="https://yes-chef.herokuapp.com/" class="portfolio-box">
-            <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-            <div class="hilight">
-              <h4>Yes, Chef!</h4>
-            </div>
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-name">
-                  Yes, Chef!
-                </div>
-                <small>An app built to help connect home chefs to their customer base and allow them to create menus and receive orders.</small>
-              </div>
-            </div>
-          </a>
+      <div class="row bg-primary">
+        <div class="col-md-4 col-xs-12">
+          <h2>Locations</h2>
+          <p>Click on a link to change the map</p>
+          <ul>
+            <li><a ng-click="mapSelection = 'herbal-cruz'">Herbal Cruz, Santa Cruz, CA</a></li>
+            <li><a ng-click="mapSelection = 'horizon'">Horizon Collective, Sacramento, CA</a></li>
+            <li><a ng-click="mapSelection = 'pure-life'">Pure Life Collective, Diamond Springs, CA</a></li>
+            <li><a ng-click="mapSelection = 'all'">Show all locations</a></li>
+          </ul>
         </div>
-        <div class="col-lg-6 col-sm-6 promo">
-          <a href="https://projectdanebook.herokuapp.com/" class="portfolio-box">
-            <img src="img/portfolio/fullsize/facebook-social.jpg" class="img-responsive" alt="">
-            <div class="hilight">
-              <h4>Danebook</h4>
-            </div>
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-name">
-                  Danebook
-                </div>
-                <small>An in-progress Facebook clone built as part of Viking Code School's course work.</small>
-              </div>
-            </div>
-          </a>
+        <div class="col-md-8 col-xs-12 text-center" ng-if="mapSelection === 'all' || !mapSelection">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1tyKkY1vYM4HtcVZTu8aETu1a7fE" width="100%" height="400px"></iframe>
+        </div>
+        <div class="col-md-8 col-xs-12 text-center" ng-if="mapSelection === 'horizon'">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.6550934307074!2d-121.41175434944361!3d38.54171807533644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809adad04eccb9a3%3A0x22592c0df4c6fc27!2sHorizon+Non+Profit+Collective!5e0!3m2!1sen!2sus!4v1485636992465" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-8 col-xs-12 text-center" ng-if="mapSelection === 'herbal-cruz'">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.7855110763926!2d-121.96739534948952!3d36.967179165884204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e1514132631e9%3A0x8474f7bcfbae59b9!2sHerbal+Cruz!5e0!3m2!1sen!2sus!4v1485637136646" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-8 col-xs-12 text-center" ng-if="mapSelection === 'pure-life'">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.014536167554!2d-120.81805444943895!3d38.69451036638333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809a59edfa6b6fff%3A0xecf0389997dc35eb!2sPure+Life+Collective!5e0!3m2!1sen!2sus!4v1485637289584" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h2 class="section-heading">Reach Out To Me</h2>
+          <h2 class="section-heading">Reach Out To Us</h2>
           <hr class="primary">
-          <p>If you would like to get in touch about an opportunity, have any questions, or just feel like saying hello, feel free to contact me!</p>
+          <p>If you have any questions or concerns we would love to hear from you!</p>
         </div>
         <div class="col-lg-4 col-lg-offset-2 text-center">
           <i class="fa fa-phone fa-3x sr-contact"></i>
-          <p>510.990.5172</p>
+          <p>916.990.7776</p>
         </div>
         <div class="col-lg-4 text-center">
           <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-          <p><a href="mailto:john.popenuck@gmail.com">john.popenuck@gmail.com</a></p>
+          <p><a href="mailto:shane.santucci@yahoo.com">shane.santucci@yahoo.com</a></p>
         </div>
         <div class="col-md-12 text-center">
           <ul class="social-network social-circle">
-            <li><a href="https://github.com/popenuj" target="_blank" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/johnpopenuck" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/john.popenuck" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <!-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
-            <li><a href="https://johnpopenuck.wordpress.com/" target="_blank" class="icoWordpress" title="Wordpress"><i class="fa fa-wordpress"></i></a></li>
+            <li><a href="https://www.facebook.com/pg/GratefulDudeBalm/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
           </ul>
         </div>
       </div>
@@ -254,6 +241,9 @@
 
   <!-- Theme JavaScript -->
   <script src="js/creative.js"></script>
+
+  <!-- Angular -->
+  <script src="/js/app.js"></script>
 
 </body>
 

@@ -39,46 +39,29 @@
         duration: 1000,
         delay: 200
     });
-    sr.reveal('.icss', {
+    sr.reveal('.review1', {
         duration: 1000,
         delay: 200
     });
-    sr.reveal('.iheroku', {
+    sr.reveal('.review2', {
         duration: 1000,
-        delay: 300
+        delay: 350
     });
-    sr.reveal('.ihtml', {
-        duration: 1000,
-        delay: 400
-    });
-    sr.reveal('.ijavascript', {
+    sr.reveal('.review3', {
         duration: 1000,
         delay: 500
     });
-    sr.reveal('.imysql', {
+    sr.reveal('.review4', {
         duration: 1000,
-        delay: 600
+        delay: 650
     });
-    sr.reveal('.ipostgres', {
-        duration: 1000,
-        delay: 700
-    });
-    sr.reveal('.iruby', {
+    sr.reveal('.review5', {
         duration: 1000,
         delay: 800
     });
-    sr.reveal('.iror', {
+    sr.reveal('.review6', {
         duration: 1000,
-        delay: 900
+        delay: 950
     });
-    sr.reveal('.isass', {
-        duration: 1000,
-        delay: 1000
-    });
-    sr.reveal('.sr-contact', {
-        duration: 600,
-        scale: 0.3,
-        distance: '0px'
-    }, 300);
 
 })(jQuery); // End of use strict
