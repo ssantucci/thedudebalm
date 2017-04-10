@@ -199,7 +199,9 @@
           <li><a ng-click="mapSelection = 'herbal-cruz'">Herbal Cruz, Santa Cruz, CA</a></li>
           <li><a ng-click="mapSelection = 'summit'">Summit Collective (Delivery), Monterey, CA</a></li>
         </ul>
-        <a class="clickable" ng-click="mapSelection = 'all'"><h4>Show all locations</h4></a>
+        <div class="clickable">
+          <a ng-click="mapSelection = 'all'"><h4>Show all locations</h4></a>
+        </div>
       </div>
       <div class="col-md-8 col-xs-12 text-center" ng-if="mapSelection === 'all' || !mapSelection">
         <iframe src="https://www.google.com/maps/d/embed?mid=1FNE-brqzEC6a2A3cfLO7ZlfMldI" width="640" height="480"></iframe>

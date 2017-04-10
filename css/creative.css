@@ -594,6 +594,10 @@ li a {
   cursor: pointer;
 }
 
-.clickable {
+.clickable a {
   color: white;
+}
+
+.clickable a:hover {
+  cursor: pointer;
 }
