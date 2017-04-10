@@ -600,4 +600,5 @@ li a {
 
 .clickable a:hover {
   cursor: pointer;
+  color: #eb3812;
 }
