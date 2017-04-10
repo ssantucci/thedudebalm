@@ -179,16 +179,29 @@
         <div class="col-md-4 col-xs-12">
           <h2>Locations</h2>
           <p>Click on a link to change the map</p>
+          <h4>Placerville Area</h4>
           <ul>
-            <li><a ng-click="mapSelection = 'herbal-cruz'">Herbal Cruz, Santa Cruz, CA</a></li>
-            <li><a ng-click="mapSelection = 'horizon'">Horizon Collective, Sacramento, CA</a></li>
-            <li><a ng-click="mapSelection = 'pure-life'">Pure Life Collective, Diamond Springs, CA</a></li>
             <li><a ng-click="mapSelection = 'all-naturals'">All Naturals, Inc., Shingle Springs, CA</a></li>
-            <li><a ng-click="mapSelection = 'central-coast'">Central Coast Wellness Center, Ben Lamond, CA</a></li>
-            <li><a ng-click="mapSelection = 'silverstreak'">Silverstreak Solutions (Delivery), Folsom, CA</a></li>
-            <li><a ng-click="mapSelection = 'summit'">Summit Collective (Delivery), Monterey, CA</a></li>
-            <li><a ng-click="mapSelection = 'all'">Show all locations</a></li>
+            <li><a ng-click="mapSelection = 'pure-life'">Pure Life Collective, Diamond Springs, CA</a></li>
           </ul>
+          <h4>Sacramento Area</h4>
+          <ul>
+            <li><a ng-click="mapSelection = 'horizon'">Horizon Collective, Sacramento, CA</a></li>
+            <li><a ng-click="mapSelection = 'silverstreak'">Silverstreak Solutions (Delivery), Folsom, CA</a></li>
+          </ul>
+          <h4>San Francisco Area</h4>
+          <ul>
+            <li><a ng-click="mapSelection = 'sfgd'">SF Green Delivery (Delivery), San Francisco, CA</a></li>
+          </ul>
+          <h4>Santa Cruz Area</h4>
+          <ul>
+            <li><a ng-click="mapSelection = 'central-coast'">Central Coast Wellness Center, Ben Lamond, CA</a></li>
+            <li><a ng-click="mapSelection = 'herbal-cruz'">Herbal Cruz, Santa Cruz, CA</a></li>
+            <li><a ng-click="mapSelection = 'summit'">Summit Collective (Delivery), Monterey, CA</a></li>
+          </ul>
+          <div class="clickable">
+            <a ng-click="mapSelection = 'all'"><h4>Show all locations</h4></a>
+          </div>
         </div>
         <div class="col-md-8 col-xs-12 text-center" ng-if="mapSelection === 'all' || !mapSelection">
           <iframe src="https://www.google.com/maps/d/embed?mid=1FNE-brqzEC6a2A3cfLO7ZlfMldI" width="640" height="480"></iframe>
