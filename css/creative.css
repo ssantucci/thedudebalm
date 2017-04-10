@@ -602,3 +602,7 @@ li a {
   cursor: pointer;
   color: #eb3812;
 }
+
+.col-md-4 h4 {
+  cursor: none;
+}
