@@ -602,3 +602,12 @@ li a {
   cursor: pointer;
   color: #eb3812;
 }
+
+#contact {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#donate {
+  padding-bottom: 10px;
+}
