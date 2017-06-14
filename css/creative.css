@@ -477,7 +477,9 @@ ul.social-network li {
 a.socialIcon:hover, .socialHoverClass {
 	color:#44BCDD;
 }
-
+.paypal {
+  color: #fff;
+}
 .social-circle li a {
 	display:inline-block;
 	position:relative;
