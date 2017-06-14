@@ -479,6 +479,7 @@ a.socialIcon:hover, .socialHoverClass {
 }
 .paypal {
   color: #fff;
+  text-decoration: underline;
 }
 .social-circle li a {
 	display:inline-block;
